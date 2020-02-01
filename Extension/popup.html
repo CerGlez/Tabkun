@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Incluir bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    -->    
+<!---->
+    <!--<link id="contenedor" href="./src/layouts/html/register.html" rel="import"></link>-->
+    <title>extension</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div id="registro" class="container-fluid bg-light py-2" style="width: 300px;display: none;">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                    <div class="card card-body">
+                        <h3 class="text-center mb-4">Registro</h3>
+                        <form id="formulario">
+                        <fieldset>
+                            <div class="form-group has-error">
+                                <input id="email" class="form-control input-lg" placeholder="Correo" name="email" type="text">
+                            </div>
+                            <div class="form-group has-success">
+                                <input id="p1" class="form-control input-lg" placeholder="Password" name="password" value="" type="password">
+                            </div>
+                            <div class="form-group has-success">
+                                <input id="p2" class="form-control input-lg" placeholder="Confirm Password" name="password" value="" type="password">
+                            </div>
+                            <button id="enviar" class="btn btn-lg btn-primary btn-block" value="subir" >Subir</button>
+                        </fieldset>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="muestra" class="container-fluid bg-light py-2" style="width: 300px;display: none;">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body " style="margin-bottom: 1em;">
+                    <h3 class="text-center mb-4">Su TabKun</h3>
+                    <div id="tabs" class="card card-body" style="max-height: 50vh;overflow-y: scroll;">
+                        <h4 class="text-center mb-2">Pestañas abiertas</h3>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <!--<div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>
+                        <div class="form-control mb-1">Ejemplo de pestaña</div>-->
+                    </div>
+                    <button class="form-control mb-1">Save this page</button>
+                    <button class="form-control mb-1">Save all</button>
+                    <button class="btn btn-lg btn-primary btn-block" style="background-color: green;">Open your Tabkun</button>
+                    <p id="cerrar" class="small text-dark" style="border:1px solid red;">Cerrar sesion</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
